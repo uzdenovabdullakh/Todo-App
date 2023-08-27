@@ -1,0 +1,136 @@
+@media screen and (max-width: 2560px) and (min-width: 1921px){
+    .change-color-mode-btn {
+       font-size: 2rem;
+    }
+    .add-task-btn__icon {
+        transform: scale(2.5);
+    }
+    .add-task-btn {
+        right: 76px !important;
+        bottom: 90px !important;
+    }
+    .add-task-btn:hover{
+        &:before{
+           font-size: 2vmax;
+           top: -89px !important;
+           right: 120px !important; 
+        }
+    }
+    .add-task-btn__icon:hover{
+        transform: rotate(180deg) scale(4) !important;
+    }
+    .header__date-title {
+        font-size: 4rem !important;
+    }
+    .header__status {
+        font-size: 1.5rem !important;
+    }
+    h4 {
+        font-size: 2rem !important;
+    }
+    .task{
+        label {
+            font-size: 2rem !important;
+        }
+        p{
+            font-size: 1.5rem !important;
+        }
+    }
+    .task__input {
+        width: 2.5rem !important;
+        height: 2.5rem !important;
+    }
+    .modal-content {
+        padding: 70px;
+        max-width: 700px;
+        margin: 500px auto;
+    }
+    .close-modal-btn {
+        font-size: 3em;
+    }
+    .modal-title {
+        font-size: 2.5em;
+    }
+    .modal-container {
+        gap: 2em;
+    } 
+    .modal-add-task-btn {
+        padding: 22px 71px;
+        border-radius: 40px;
+        font-size: 2rem;
+    }
+    .modal-body__task-name-input {
+        border-radius: 25px;
+        padding: 10px;
+        width: 440px;
+        font-size: 2em;
+    }
+    .modal-body__task-category-input {
+        border-radius: 25px;
+        padding: 10px;
+        width: 320px;
+        font-size: 1.5rem;
+        option {
+            font-size: 1em;
+        }
+    }   
+    .modal-body {
+        gap: 2em;
+        p{
+            font-size: 2rem;
+        }
+    }
+
+}
+@media screen and (max-width: 1920px) and (min-width: 1600px){
+    .add-task-btn__icon {
+        transform: scale(1.5);
+    }
+    .add-task-btn:hover{
+        &:before{
+           font-size: 1.5vmax;
+           top: -25px !important;
+           right: 48px !important;
+        }
+    }
+    .add-task-btn__icon:hover{
+        transform: rotate(180deg) scale(3.5);
+    }
+    .modal-content{
+        padding: 40px;
+        max-width: 460px;
+        margin: 270px auto;
+    }
+    .modal-add-task-btn {
+        padding: 14px 44px;
+        border-radius: 25px;
+    }
+    .modal-body__task-name-input {
+        border-radius: 25px;
+        padding: 10px;
+        width: 320px;
+    }
+    .modal-body__task-category-input {
+        border-radius: 25px;
+        padding: 10px;
+        width: 200px;
+    }
+}
+// @media screen and (max-width: 1599px) and (min-width: 1200px){
+//     .add-task-btn__icon {
+//         transform: scale(2);
+//     }
+//     .add-task-btn {
+//         right: 76px !important;
+//     }
+//     .add-task-btn:hover{
+//         &:before{
+//            font-size: 2vmax;
+//            top: -46px !important;
+//            right: 50px !important;
+//         }
+//     }
+//     .add-task-btn__icon:hover{
+//         transform: rotate(180deg) scale(3);
+//     }
+// }

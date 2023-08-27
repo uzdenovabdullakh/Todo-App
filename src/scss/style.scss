@@ -1,0 +1,152 @@
+@import 'reset';
+//@import 'checkbox';
+@import 'modal';
+@import 'media-queries';
+
+$light-bg: #F8F8F8;
+$dark-bg: #141419;
+$font-color-for-light: #575767;
+$font-color-for-dark: #DADADA;
+$font: 'Inter', sans-serif;
+
+body {
+    background-color: $light-bg;
+    font-family: $font;
+}
+
+.change-color-mode-btn{
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.dark-theme{
+    background-color: $dark-bg;
+}
+
+.dark-theme-text{
+    color: $font-color-for-dark !important;
+}
+
+.wrapper {
+    margin: 60px auto;
+    max-width: 60vmax;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.header{
+    border-bottom: 0.125rem solid #D0D0D0;
+}
+
+.header__date-title{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0E0E11;
+    line-height: 1.5;
+}
+
+.header__status{
+    color: $font-color-for-light;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 3;
+}   
+
+.main-container{
+    margin-top: 10px;
+}
+
+h4{
+    color: $font-color-for-light;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.incomplete-tasks{
+    margin-top: 1rem;
+}
+
+.complete-tasks{
+    margin-top: 1rem;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-top: 0.5rem;
+}
+
+.task{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    label {
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+    p{
+        color: #B9B9BE;
+        font-size: 0.875rem;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+}
+
+.incomplete-tasks__task{
+    label{
+        color: $font-color-for-light;
+    }
+}
+
+.complete-tasks__task{
+    label {
+        color: #B9B9BE;
+    }
+}
+
+.task__caption{
+    margin-left: 1.2rem;
+}
+
+.task__input{
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.add-task-btn{
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+}
+
+.add-task-btn:hover{
+    transition: 1s;
+    &:before{
+        transition: 2s;
+        transform: translateX(29px);
+        content: "Add new task";
+        font-family: $font;
+        position: relative;
+        top: -15px;
+        right: 15px;
+    }
+}
+
+.add-task-btn__icon{
+    background: url('../../public/image/add-task.svg');
+    width: 72px;
+    height: 72px;
+    cursor: pointer;
+}
+
+.add-task-btn__icon:hover{
+    transform: rotate(180deg) scale(1.5);
+    transition: 1s;
+}

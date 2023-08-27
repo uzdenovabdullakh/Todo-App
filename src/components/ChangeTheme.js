@@ -3,14 +3,14 @@ import React from 'react';
 function ChangeTheme() {
 
     function handleClick(e){
-        if(e.target.innerHTML==='☾ Ночь'){
+        if(e.target.innerHTML==='☾ Night'){
             e.target.innerHTML='';
-            e.target.innerHTML='🌞 День';
+            e.target.innerHTML='🌞 Day';
             e.target.classList.add('dark-theme-text')
         }
         else {
             e.target.innerHTML='';
-            e.target.innerHTML='☾ Ночь';
+            e.target.innerHTML='☾ Night';
             e.target.classList.remove('dark-theme-text')
         }
 
@@ -29,7 +29,7 @@ function ChangeTheme() {
 
     return (
         <div className="change-color-mode-btn" type="button" onClick={handleClick}>
-            <span>☾ Ночь</span>
+            <span>☾ Night</span>
         </div> 
     );
 }
